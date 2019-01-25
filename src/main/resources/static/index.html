@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+<title>Simplon Actor Database</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.18/datatables.min.css" />
+
+</head>
+<body>
+
+	<section id="sectionActor" class="container" style="min-height: 500px">
+
+		<header>
+			<h1>Simplon Actor Database</h1>
+		</header>
+
+		<article class="row" id="all">
+
+			<article class="col col-md-5" id="actorDetail">
+				<form class="form-horizontal col-md-8" id="actor-form">
+					<div class="form-group">
+						<label class="control-label">id</label> <input type="number"
+							class="form-control" id="id" />
+					</div>
+					<div class="form-group">
+						<label class="control-label">lastUpdate</label> <input
+							type="dateTime" class="form-control" id="lastUpdate" />
+					</div>
+					<div class="form-group">
+						<label class="control-label">Firstname</label> <input type="text"
+							class="form-control" id="firstname" />
+					</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">Lastname</label> <input
+							type="text" class="form-control" id="lastname" />
+					</div>
+				</form>
+
+				<div class="form-group">
+					<button id="btn-get" class="btn btn-primary">GET</button>
+					<button id="btn-post" class="btn btn-primary">CREATE</button>
+					<button id="btn-put" class="btn btn-primary">UPDATE</button>
+					<button id="btn-delete" class="btn btn-primary">DELETE</button>
+					<button id="btn-reset" class="btn btn-primary">CLEAR</button>
+				</div>
+			</article>
+
+			<article class="col col-md-7" id="actorList">
+				<table id="actorTable" class="cell-border">
+					<thead>
+						<tr>
+							<th>id</th>
+							<th>firstname</th>
+							<th>lastname</th>
+							<th>lastUpdate</th>
+						</tr>
+					</thead>
+
+				</table>
+			</article>
+
+
+		</article>
+	</section>
+
+
+	<footer id="footer" class="container">
+		<p>
+			© <a href="http://www.simplon.co">simplon.co</a> 2018
+		</p>
+	</footer>
+
+
+	<script type="text/javascript"
+		src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.18/datatables.min.js"></script>
+
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/actor.js"></script>
+</body>
+</html>
