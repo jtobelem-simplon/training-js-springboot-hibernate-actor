@@ -25,8 +25,18 @@ public class Actor implements Serializable {
 	
 	private LocalDate lastUpdate;
 	
+	/**
+	 * For mock reason in order to test.
+	 */
+	public Actor(Long id, String lastName, String firstName, LocalDate lastUpdate) {
+		this.id = id;
+		this.lastName = lastName;
+		this.firstName = firstName;
+		this.lastUpdate = lastUpdate;
+	}
+	
+
 	public Actor() {
-		super();
 	}
 
 	public Long getId() {
